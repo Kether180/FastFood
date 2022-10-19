@@ -1,8 +1,8 @@
-Exercise
+# Exercise
 
 You have been tasked with writing an ordering system for a fast food restaurant. To do this, you must write the following three Java classes:
 
-1. Create a public class Food:
+# 1. Create a public class Food:
 
 Constructor: Food(String, int)
 Fields: name, price
@@ -13,7 +13,7 @@ Methods: getPrice(), display()
     -getPrice() must return the price
     -The display() method must print price + " kr " + name.
 
-2. Create a subclass of Food called Pizza:
+# 2. Create a subclass of Food called Pizza:
 
 Constructor: Pizza()
 Fields: toppings
@@ -40,7 +40,7 @@ Methods: ..., addTopping(String), setName(String)
 
 - setName(String name) must set the name of the pizza through the name field of Food.
 
-  3.Create a class Order, representing an order of several food items:
+# 3. Create a class Order, representing an order of several food items:
 
 Constructor: Order()
 Fields: ordered
@@ -62,5 +62,8 @@ Methods: total(), display(), payWith(CreditCard)
 
 # Expected Output
 
-Food.name has the right type and modifiers
-Food.price has the right type and modifiers
+Food.name has the right type and modifiers.
+
+Food.price has the right type and modifiers.
+
+Attached CreditCard.java 

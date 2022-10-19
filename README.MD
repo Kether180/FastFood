@@ -60,7 +60,7 @@ Methods: total(), display(), payWith(CreditCard)
     -CreditCard is an interface, which is attached at the bottom of the problem description. You do not need to upload it with your solution, but if you copy it into your source folder, your code can compile locally.
     -The payWith(CreditCard card) must return a boolean. It must attempt to withdraw the current total of the order from the credit card. payWith should return the same value that withdraw returns, but in case it is false, it must also print "ERROR: Payment failed".
 
--Expected Output
+# Expected Output
 
 Food.name has the right type and modifiers
 Food.price has the right type and modifiers

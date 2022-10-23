@@ -3,30 +3,29 @@ import java.util.List;
 
 public class Pizza extends Food {
 
-    private List<Food> toppings = new ArrayList<Food>();
-    // private String name;
-    // private double price;
+    private List<String> toppings = new ArrayList<String>();
 
     public Pizza(String name, double price) {
         super("pizza", 45);
-
     }
 
-    public List<Food> addTopping(String topping) {
+    public void addTopping(String topping) {
 
-        Food pizza1 = new Food(null, 0); // subclass object
-        Food pizza2 = new Food(null, 0); // subclass object
+        toppings.add("Pepperoni"); // toppings for the pizza
+        toppings.add("Pineapple"); // toppings for the pizza
+        toppings.add("Onion"); // toppings for the pizza
 
-        toppings.add(pizza1); // toppings for the pizza
-        toppings.add(pizza2); // toppings for the pizza
+        int priceTopping = 10;
+        // if pizza contains extra topping increase 10DKK priceTopping++;
 
-        // price++;
+        if (toppings.contains(topping))
+            ;
+        priceTopping++;
 
-        return toppings;
-    }
-
-    {
-
+        System.out.println("Pizza: " + toppings + priceTopping); // example not yet done - the class must override the
+                                                                 // display method of the super class
+        // e.g 75 kr Pizza { Pepperoni, Pineapple, Onion } or empty pizza = 45 kr Pizza
+        // { }
     }
 
 }

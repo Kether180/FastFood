@@ -1,29 +1,24 @@
+import java.util.ArrayList;
 
 public class Pizza extends Food {
 
-    private String toppings;
+    private ArrayList<String> toppings = new ArrayList<String>();
+    private String name;
+    private double price;
 
     public Pizza(String name, double price, String toppings) {
         super(name, price);
 
-        // this.name = "pizza";
-        // this.price = 45;
-        this.toppings = toppings;
+        this.name = name;
+        this.price = price;
 
     }
 
-    public void  addTopping(String topping) {
+    public ArrayList<String> addTopping(String topping) {
 
-        String toppings;
+        // price++;
 
-        if ()
-
-        for ( String flavors : toppings) {
-
-            pizza;
-
-            price++;
-        }
+        return toppings;
     }
 
     {

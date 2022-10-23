@@ -1,7 +1,7 @@
 public class Food {
 
-    protected String name;
-    protected double price;
+    private String name;
+    private double price;
 
     public Food(String name, double price) {
 

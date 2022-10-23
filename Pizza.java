@@ -6,11 +6,8 @@ public class Pizza extends Food {
     private String name;
     private double price;
 
-    public Pizza(String name, double price, String toppings) {
-        super(name, price);
-
-        this.name = name;
-        this.price = price;
+    public Pizza(String name, double price) {
+        super("pizza", 45);
 
     }
 

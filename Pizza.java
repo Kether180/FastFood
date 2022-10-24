@@ -22,8 +22,14 @@ public class Pizza extends Food {
             ;
         priceTopping++;
 
-        System.out.println("Pizza: " + toppings + priceTopping); // example not yet done - the class must override the
-                                                                 // display method of the super class
+        System.out.println("Pizza: " + toppings + priceTopping);
+    }
+
+    public void display() {
+        super.display();
+        System.out.println(price + "kr" + name);
+        // the class must override the
+        // display method of the super class display()
         // e.g 75 kr Pizza { Pepperoni, Pineapple, Onion } or empty pizza = 45 kr Pizza
         // { }
     }

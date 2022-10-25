@@ -27,17 +27,18 @@ public class Pizza extends Food {
 
         String sToppingConcat;
         sToppingConcat = "";
-        sToppingConcat = "{";
+        sToppingConcat += "{";
         for (String toppinNames : toppings) {
             sToppingConcat += " ";
             sToppingConcat += toppinNames;
             sToppingConcat += ",";
 
         }
-        sToppingConcat = sToppingConcat.substring(0, sToppingConcat.length() - 1);
+        sToppingConcat = sToppingConcat.substring(0, sToppingConcat.length());
         sToppingConcat += " }";
 
-        setName(sToppingConcat);
+        // setName(sToppingConcat);
+        System.out.println(price + " kr " + name + " " + sToppingConcat);
 
     }
 

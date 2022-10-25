@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Order {
 
-    String ordered;
+    private List<String> ordered;
 
     public Order(String ordered) {
 
@@ -9,6 +12,7 @@ public class Order {
     }
 
     public void addFood(Food food) {
+        ordered = new ArrayList<String>();
 
         return;
 
@@ -19,7 +23,5 @@ public class Order {
         return total;
 
     }
-
-
 
 }

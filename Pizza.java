@@ -3,10 +3,12 @@ import java.util.List;
 
 public class Pizza extends Food {
 
-    private List<String> toppings = new ArrayList<String>();
+    private List<String> toppings;
 
     public Pizza(String name, double price) {
         super("pizza", 45);
+
+        toppings = new ArrayList<String>();
     }
 
     public void addTopping(String topping) {
@@ -18,11 +20,32 @@ public class Pizza extends Food {
         int priceTopping = 10;
         // if pizza contains extra topping increase 10DKK priceTopping++;
 
-        if (toppings.contains(topping))
-            ;
-        priceTopping++;
+        if (toppings.contains(topping));
+        priceTopping++; { else {
 
-        System.out.println("Pizza: " + toppings + priceTopping);
+
+        }
+
+
+        }
+
+        System.out.println(topping + priceTopping);
+    }
+
+    public void setName(String name) { // must set the name of the pizza through the name field of Food.
+
+        String[] pizzas = { "Pepperoni ", "Margarita", "Napolitana" };
+
+        String separator = "";
+
+        for (String word : pizzas) {
+
+            System.out.println(separator);
+            System.out.println(word);
+            separator = " ";
+
+        }
+
     }
 
     public void display() {
@@ -35,9 +58,3 @@ public class Pizza extends Food {
     }
 
 }
-
-// Note: Parameters refers to the list of variables in a method declaration.
-// Arguments are the actual values that are passed in when the method is
-// invoked.
-// When you invoke a method, the arguments used must match the declaration's
-// parameters in type and order.

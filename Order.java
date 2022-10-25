@@ -5,16 +5,16 @@ public class Order {
 
     private List<String> ordered;
 
-    public Order(String ordered) {
-
-        this.ordered = "food";
+    public Order() {
 
     }
 
     public void addFood(Food food) {
+
         ordered = new ArrayList<String>();
 
-        return;
+        ordered.add("");
+        ordered.add("");
 
     }
 
@@ -24,4 +24,15 @@ public class Order {
 
     }
 
+    public void display()
+
+    {
+
+    }
+
 }
+
+// 65 kr Burge
+// 25 kr Coke
+// 75 kr Pizza { Pepperoni, Pineapple, Onion }
+// 165 TOTAL

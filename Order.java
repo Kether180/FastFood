@@ -1,24 +1,30 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Order {
+public class Order implements CreditCard {
 
-    private List<String> ordered;
+    protected List<Food> ordered;
 
     public Order() {
+
+        ordered = new ArrayList<Food>();
 
     }
 
     public void addFood(Food food) {
 
-        ordered = new ArrayList<String>();
-
-        ordered.add("");
-        ordered.add("");
+        ordered.add(food);
 
     }
 
-    public double total() {
+    public int total() {
+
+        int total;
+        total = 0;
+
+        for (Food f : ordered) {
+            total += f.price;
+        }
 
         return total;
 
@@ -28,6 +34,27 @@ public class Order {
 
     {
 
+        for (Food f : ordered) {
+
+            System.out.println(f.price + " kr " + f.name);
+        }
+
+        System.out.println(total() + " TOTAL");
+
+    }
+
+    public boolean payWith(CreditCard card) {
+        return false;
+    }
+
+    @Override
+    public boolean withdraw(int amount) {
+
+        if (amount == total()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }

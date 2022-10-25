@@ -1,16 +1,16 @@
-public abstract class Food {
+public class Food {
 
-    private String name;
-    private double price;
+    protected String name;
+    protected int price;
 
-    public Food(String name, double price) {
+    public Food(String name, int price) {
 
         this.name = name;
         this.price = price;
 
     }
 
-    public double getPrice()
+    public int getPrice()
 
     {
 
@@ -21,7 +21,7 @@ public abstract class Food {
     public void display()
 
     {
-        System.out.println(price + "kr" + name);
+        System.out.println(price + " kr " + name);
 
     }
 

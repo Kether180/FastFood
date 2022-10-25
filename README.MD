@@ -65,9 +65,3 @@ Methods: total(), display(), payWith(CreditCard)
 Food.name has the right type and modifiers.
 
 Food.price has the right type and modifiers.
-
-<<<<<<< HEAD
-# Attached CreditCard.java
-=======
-# Attached CreditCard.java 
->>>>>>> 6f5d0852b3ec63ff3233050c7e549ef112f58321

@@ -23,22 +23,26 @@ public class Pizza extends Food {
         super.name += " " + name;
     }
 
+    @Override
     public void display() {
 
         String sToppingConcat;
-        sToppingConcat = "";
-        sToppingConcat += "{";
+        sToppingConcat = " ";
         for (String toppinNames : toppings) {
-            sToppingConcat += " ";
+            sToppingConcat += "";
             sToppingConcat += toppinNames;
-            sToppingConcat += ",";
+            sToppingConcat += ", ";
 
         }
-        sToppingConcat = sToppingConcat.substring(0, sToppingConcat.length());
+        if (toppings.isEmpty()) {
+            sToppingConcat = sToppingConcat.substring(0, sToppingConcat.length() - 1);
+
+        } else
+            sToppingConcat = sToppingConcat.substring(0, sToppingConcat.length() - 2);
         sToppingConcat += " }";
 
         // setName(sToppingConcat);
-        System.out.println(price + " kr " + name + " " + sToppingConcat);
+        System.out.println(price + " kr " + name + " {" + sToppingConcat);
 
     }
 

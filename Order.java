@@ -39,7 +39,7 @@ public class Order implements CreditCard {
             System.out.println(f.price + " kr " + f.name);
         }
 
-        System.out.println(total() + " TOTAL");
+        System.out.println(total() + " kr TOTAL");
 
     }
 

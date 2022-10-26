@@ -20,7 +20,7 @@ public class Pizza extends Food {
     }
 
     public void setName(String name) { // must set the name of the pizza through the name field of Food.
-        super.name += " " + name;
+        this.name = name;
     }
 
     @Override

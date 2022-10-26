@@ -35,8 +35,8 @@ public class Order implements CreditCard {
     {
 
         for (Food f : ordered) {
-
-            System.out.println(f.price + " kr " + f.name);
+            f.display();
+            // System.out.println(f.price + " kr " + f.name);
         }
 
         System.out.println(total() + " kr TOTAL");
@@ -44,17 +44,20 @@ public class Order implements CreditCard {
     }
 
     public boolean payWith(CreditCard card) {
-        return false;
+
+        if (!card.withdraw(total())) {
+
+            System.out.println("ERROR: Payment failed");
+
+        }
+        return card.withdraw(total());
     }
 
     @Override
     public boolean withdraw(int amount) {
 
-        if (amount == total()) {
-            return true;
-        } else {
-            return false;
-        }
+        return false;
+
     }
 
 }
